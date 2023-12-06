@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 400;
+overflow-x: hidden;
+}
+.main_container{
+width: 100vw;
+min-height: 100vh;
+overflow-x: hidden;
+}
+.container{
+    display: flex;
+    width: 100vw;
+}
+.logoimage{
+    height: 8rem;
+    width:  8rem;
+    margin-left:1.2rem;
+}
+.logopart{
+    display: flex;
+}
+.collegename{
+    margin-top:1.3rem;
+    margin-left: 1.2rem;
+    text-transform: capitalize;
+}
+.meerut{
+    font-size: 2rem;
+}
+.manubar{
+    display: flex;
+    gap: 7rem;
+ margin-left: 10rem;
+    position: relative;
+   align-items: baseline;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.content_manu{
+    margin-right: 2rem;
+}
+.login,.register{
+  margin-top: 3rem;
+    cursor: pointer;  
+}
+.loginclick{
+    padding-left: 2rem;
+    padding-top: .5rem;
+} 
+.regist{
+padding: .5rem;
+}
+.manubar i{
+    margin-left: .6rem;
+}
+.opt{
+   padding-top: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: #485664;
+    color: #FFFFFF;
+    padding: .6rem;
+    border: .5px solid black;
+}
+
+.manuopt1 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.toggle_manu{
+    display: none;
+}
+.manuopt1{
+    display: none;
+}
+.myid{
+    background-color: #485664;
+}
+.manuopt1 .opt:hover {background-color:  rgb(78, 80, 83); background-color: #595b5d;}
+
+.login:hover .manuopt1 {display: block;}
+
+.login:hover .loginclick {background-color: #323b44; color: white;
+padding-bottom: 10px;}
+
+.manuopt1 .opt:hover {background-color:#0EA2BD; }
+
+.register:hover .manuopt1 {display: block;}
+
+.register:hover .regist {background-color: #323b44;color: white;
+padding-bottom: 10px;}
+
+@media  (max-width:1248px) {
+    .manubar{
+        margin-left: 7rem;
+        gap: 5rem;
+    }
+}
+@media  (max-width:1056px) {
+    .manubar{
+        
+        gap: 3.6rem;
+    }
+    .logoimage{
+        height: 7rem;
+        width: 7rem;
+    }
+    .meerut{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:991px) {
+    .toggle_manu{
+        display: block;
+        color: black;
+    }
+}
+/* @media (max-width: 930px) {
+    .maincontent{
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 720px) {
+    .maincontent{
+        margin-left: 10rem;
+    }
+}
+@media (max-width: 600px) {
+    .maincontent{
+        margin-left: 16rem;
+    }
+}
+@media (max-width: 350px) {
+    .maincontent{
+        margin-left: 18rem;
+    }
+} */

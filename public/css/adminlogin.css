@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    display: flex;
+    gap: 40rem;
+    width: 100vw;
+    height: 5rem;
+    padding-top: 1.5rem;
+    background-color: #101A1D;
+    padding-bottom: 1.5rem;
+}
+.placement_logo{
+    margin-left: 4rem;
+    color: #4992d3;
+   
+}
+.placement_logo:hover{
+    color: #5289B5;
+}
+.manuopt {
+    display: flex;
+    gap: 5rem;
+    background-color: #101A1D;
+}
+.manuopt h3 a{
+    text-decoration: none;
+    color: #4992d3;
+}
+.manuopt h3 a:hover{
+    color:#4125AA ;
+}
+.manu h3:hover{
+    color: #4125AA;
+}
+.section{
+    background-color: #1F2937;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+}
+
+.portal_heading{
+    color: white;
+    margin-left: 5.4rem;
+    margin-bottom: 1.3rem;
+}
+.label{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    margin-left: 7px;
+}
+  /* Assign full width inputs*/  
+  input[type=text],  
+  input[type=password] {  
+      width: 100%;  
+      padding: 12px 40px;  
+      /* margin: 8px 0;   */
+      margin-left: 8px;
+     /* margin-top: 15px; */
+     margin-bottom: 10px;
+      display: inline-block;  
+      border: 1px solid #ccc;  
+      box-sizing: border-box;  
+  }  
+    
+  /* Set a style for the buttons*/  
+  button {  
+      background-color: #4CAF50;  
+      color: white;  
+      padding: 14px 20px;  
+      /* margin: 8px 0;   */
+      margin-left: 10px;
+      margin-top: 8px;
+      border: none;  
+      cursor: pointer;  
+      width: 100%;  
+  }  
+
+  /* Set a hover effect for the button*/  
+  button:hover {  
+      opacity: 0.8;  
+  }  
+.admin{
+    margin-left: 5.7rem;
+    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
+    font-size: 18px;
+    color: white;
+}
+.section_container{
+    margin-bottom: 10rem;
+ 
+}
+.manu{
+    background-color: #111827;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #111827;
+}
+  /* Set extra style for the cancel button*/  
+  .contain {  
+      padding: 16px;  
+    
+  }  
+
+  .fontuser { 
+      position: relative; 
+  } 
+    
+  .fontuser i{ 
+      position: absolute; 
+      left: 15px; 
+      top: 40px; 
+      color: gray; 
+  } 
+    
+  .fontpassword { 
+      position: relative; 
+  } 
+    
+  .fontpassword i{ 
+      position: absolute; 
+      left: 15px; 
+      top: 40px; 
+      color: gray; 
+  } 

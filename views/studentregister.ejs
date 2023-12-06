@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registrationstudent.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <nav class="header">
+                <h1 class="placement_logo">Placement Portal</h1>
+                <div class="manuopt">
+                    <h3><a href="/">Home</a></h3>
+                    <h3><a href="#">Login</a></h3>
+                    <h3><a href="#">Contact</a></h3>
+                </div>
+            </nav>
+        </div>
+        <div class="form_container">
+            <form class="content" action="/register" method="POST">
+                <h3 class="create_profile_text">Create Your Profile</h3>
+                
+                <div class="form_field_container">
+        <div class="first_section">
+            <input type="text" id="fname" name="fname" placeholder="First Name *" >
+              <input type="text" id="lname" name="lname" placeholder="Last Name ">
+              <input type="email" id="email" name="email" placeholder="Email *" >
+              <textarea name="aboutyourself" id="aboutyourself" cols="25" rows="6" placeholder="Brief intro about yourself *" ></textarea>  
+              <input type="number"  id="age" name="age" placeholder="Age">
+              <p class="date_birth"> Date Of Birth</p>
+              <input type="date" id="date" name="date">
+              <p>Passing year</p>
+              <input type="date" id="date1" name="date1">
+               
+              <input type="text" id="Qualification" name="Qualification" placeholder="Highest Qualification">
+              <div class="terms"><input type="checkbox">I accept terms & conditions</div>
+           
+            </div>
+            <div class="second_section">
+              <input type="password" id="password" name="password" placeholder="Password *" >
+              <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password *">
+              <input type="tel" name="phone" id="phone" placeholder="Phone Number"  title="Error Message">
+             
+              <textarea name="address" id="address" cols="35" rows="6" placeholder="Address"></textarea>
+        <input type="text" id="City" name="City" placeholder="City" >
+        <input type="text" id="state" name="state" placeholder="State">
+        <textarea name="" id="" cols="35" rows="6" placeholder="Enter Skills "></textarea>
+        <!-- <p class="file_format">File Format Pdf Only !</p>
+        <input name="file" type="file"   /> -->
+    </div>
+        </div>
+        <input type="submit" id="submitDetails"
+        class="register"   name="submitDetails" value="Register" /><br>
+    </form>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2022 Placement Portal. All rights reserved.</p>
+    </div>
+    </div>
+    
+</body>
+</html>

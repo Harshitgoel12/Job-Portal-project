@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/adminregister.css">
+    <title>Admin Register</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <nav class="header">
+                <h1 class="placement_logo">Placement Portal</h1>
+                <div class="manuopt">
+                    <h3><a href="/">Home</a></h3>
+                    <h3><a href="/adminlogin">Login</a></h3>
+                    <h3><a href="#">Contact</a></h3>
+                </div>
+            </nav>
+        </div>
+       <div class="form_part">
+           <center><h2 class="create_profile_text">Placement Cell Profile</h2></center>
+        <form action="/adminregister"  method="post" class="form">
+
+        <div class="section">
+                <div class="first_section">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="text" name="designation" placeholder="Designation">
+                    <input type="url" name="website" placeholder="Website">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="roles" id="" cols="35" rows="6" placeholder="Roles & Responsibilty"></textarea>
+                    <div class="checkbox">
+                    <input type="checkbox" required> I accept terms & conditions
+                </div>
+              
+                </div>
+                <div class="second_section">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                    <input type="tel" name="phone" placeholder="Phone">
+                    <input type="text" name="country" placeholder="Country">
+                </div>
+                
+        </div>
+        <button class="register">Register</button>
+    </form>
+        </div>
+    </div>
+</body>
+</html>

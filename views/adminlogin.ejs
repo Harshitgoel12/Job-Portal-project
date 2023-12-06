@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/adminlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+    <title>Admin Login</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="header">
+        <h1 class="placement_logo">Placement Portal</h1>
+        <div class="manuopt">
+            <h3><a href="/">Home</a></h3>
+            <h3><a href="/adminregister">Admin Register</a></h3>
+            <h3><a href="">Contact</a></h3>
+        </div>
+    </nav>
+</div>
+<div class="section">
+<div class="section_container">
+    <h1 class="portal_heading">Placement Portal</h1>
+    <div class="manu">
+      
+       <div class="contain"> 
+        <p class="admin"> Admin Login</p> 
+        <form action="/login" method="post">
+        <div class="fontuser"> 
+            <label class="label"><b>Email id</b></label>  
+            <input type="text" 
+                    placeholder="Enter Email Id"
+                    name="email" required>  
+            <i class="fa fa-user fa-lg"></i> 
+        </div> 
+          
+        <div class="fontpassword"> 
+            <label class="label"><b>Password</b></label>  
+            <input type="password" 
+                    placeholder="Enter Password"
+                    name="password" required>  
+            <i class="fa fa-key fa-lg"></i> 
+        </div>      
+          
+        <button type="submit">Login</button>  
+    </form>
+    </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>

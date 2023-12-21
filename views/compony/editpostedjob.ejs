@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/editpostedjob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  >
+    <title>Edit Job</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_container">
+            <div class="container">
+                <nav class="header">
+                    <h1 class="placement_logo">Placement Portal</h1>
+                    <div class="manuopt">
+                        <h3><a href="/">Home</a></h3>
+                        <h3><a href="/jobproviderdash">Dashboard</a></h3>
+                        <h3><a href="/currentdrive">Current Drives</a></h3>
+                        <h3><a href="#">Contact</a></h3>
+                    </div>
+                </nav>
+            </div>
+    </div>
+    <div class="section">
+    <form class="data" action="/editpostedjob/<%= x.ctc%>?_method=put" method="POST">
+        <h3 class="statics">Edit Posted Job</h3>
+        
+        <input type="text" name="componyname" value="<%= x.componyname %>" placeholder="Compony Name">
+        <textarea name="jobdescription" value=""  cols="40" rows="10" placeholder="Job Description"><%= x.jobdescription %></textarea>
+    <input type="number" name="ctc" value="<%= x.ctc %>" placeholder="Salary">
+    <input type="number" name="eligibilitycriteria" value="<%= x.eligibilitycriteria%>" placeholder="Eligibility Criteria">
+    <input type="text" name="role" value="<%= x.role%>" placeholder="Role">
+    <input type="text" name="Qualification" value="<%= x.Qualification%>" placeholder="Qualification Required">
+    <button>Edit</button>
+    </div>
+    </div>
+    <footer>
+    <p class="footertext">Copyright © 2022 Placement Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

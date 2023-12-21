@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/currentdrive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  >
+    
 </head>
 <body>
     <div class="whole_parent">
@@ -61,13 +63,14 @@
                         <td><%=x[i].role %></td>
                         <td><%=x[i].Qualification %></td>
                         <td><%= x[i].ctc %></td>
-                        <td class="edit"><i class="fa-solid fa-pen-to-square"></i></td>
-                        <td class="edit"><i class="fa-solid fa-trash"></i></td>
+                        <td class="edit"><a href="/editpostedjob/<%=x[i].ctc %>"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                        <td class="edit"><a href="#"><i class="fa-solid fa-trash"></i></a></td>
                     </tr>
   <% } %>
                 </tbody>
             </thead>
         </table>
+        
     </div>
     </div>
     <footer>

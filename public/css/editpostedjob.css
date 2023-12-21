@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.whole_parent{
+.whole_code{
     overflow-x: hidden;
 }
 .header{
@@ -13,7 +13,7 @@
     width: 100vw;
     height: 5rem;
     padding-top: 1.5rem;
-    background-color: #21353b;
+    background-color:#21353b;
     padding-bottom: 1.5rem;
 }
 .placement_logo{
@@ -61,21 +61,12 @@
 .section{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: start;
-    gap: 3rem;
+    gap: 5rem;
     margin-bottom: 1.2rem;
 }
-.navbar{
-    background-color: white;
-    color: black;
-    padding: 3rem 5rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    box-shadow: 10px 5px 5px rgb(226, 218, 218);
-    margin-bottom: .5rem;
-    height: 110vh;
-}
+
 .manu{
     margin-bottom: 4rem;
     font-size: 1.3rem;
@@ -87,14 +78,6 @@ a{
     margin-left: .2rem;
 }
 
-.welcome{
-    display: flex;
-    color: rgb(167, 34, 167);
-}
-.logout{
-  font-size: 1.3rem;
-  margin-top: 10rem;  
-}
 .statics{
     margin-top: 2rem;
     font-size: 2.4rem;
@@ -105,29 +88,47 @@ a{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  margin-right: 2rem;
+ width: 60%;
 }
-th{
-    padding:1rem 2.1rem;
-    font-size: 1.2rem;
-    background-color: rgb(162, 43, 241);
+input{
+    flex: 1;
+    padding-left: 2rem;
+     width: 100%;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-size: 1.3rem;
+}
+
+textarea{
+    flex: 1;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    padding-top: 1.2rem;
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+button{
+    height: 3rem;
+    width: 6rem;
     color: white;
+    background-color: #18b150;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 6px;
+    border-color:  #18b150;
+    margin-bottom: 2rem;
 }
-td{
-    padding:1rem 2.3rem;
-    align-items: center; 
-    font-size: 1.15rem;
-    font-weight: 500;
+button:hover{
+    background-color: #07d459;
+    
 }
-table, th, td {
-    border: 2px solid rgb(112, 110, 110);
-    border-collapse: collapse;
-  }
-.edit a{
-font-size: 1.4rem;
-padding-left: 1.2rem;
-color:rgb(100, 12, 159) ;
-}
+
 footer{
     width: 100vw;
     height: 3rem;
@@ -139,10 +140,4 @@ footer{
     color: black;
     font-size: 1.2rem;
     font-weight: 600;
-}
-#pst{
-    color: rgb(9, 110, 194);
-}
-a:hover{
-    color: rgb(13, 152, 140);
 }

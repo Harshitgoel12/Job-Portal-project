@@ -1,6 +1,7 @@
 const express = require("express");
 	const mongoose = require("mongoose");
 	const bodyParser = require("body-parser");
+  const methodOverride= require('method-override') 
 const User = require("./model/User");
 const admin= require('./model/admin');
 const adm= require('./model/postj')
@@ -9,6 +10,7 @@ let app = express();
 mongoose.connect("mongodb://127.0.0.1:27017/JobPortal");
 app.use(express.static('public'));
 app.use(express.static('images'));
+app.use(methodOverride('_method'));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
@@ -40,9 +42,9 @@ app.get('/jobproviderdash',(req,res)=>{
   res.render(path.join(__dirname,'views','compony','jobproviderdash'))
 })
 
-app.get('/currentdrive', (req, res) => {
-  console.log(adm.find({}));
-  adm.find({}).then((x) => {
+app.get('/currentdrive',async (req, res) => {
+  adm.find({})
+  .then((x) => {
     res.render(path.join(__dirname, 'views', 'compony', 'currentdrives'),{x});
    
   }).catch(error => {
@@ -50,6 +52,34 @@ app.get('/currentdrive', (req, res) => {
     res.status(500).send('Internal Server Error');
   });
 });
+
+app.get('/editpostedjob/:id', (req,res)=>{
+  let readquery= req.params.id;
+  adm.findOne({ctc: readquery})
+  .then((x)=>{
+    console.log(x);
+    res.render(path.join(__dirname,'views','compony','editpostedjob'),{x})
+  })
+  
+})
+
+app.put('/editpostedjob/:id',(req,res)=>{
+  let readquery= req.params.id;
+  adm.updateOne({ctc: readquery},{
+    $set:{
+      componyname:req.body.componyname,
+      jobdescription: req.body.jobdescription,
+      ctc: req.body.ctc,
+      eligibilitycriteria: req.body.eligibilitycriteria,
+      role: req.body.role,
+      Qualification: req.body.Qualification,
+    }
+  }).then((x)=>{
+   res.render(path.join(__dirname,'views','compony','jobproviderdash'))
+  }).catch((error)=>{
+    console.log(error);
+  })
+})
 
 
 

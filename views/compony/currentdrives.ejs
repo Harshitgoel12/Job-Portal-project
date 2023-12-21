@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/currentdrive.css">
+</head>
+<body>
+    <div class="whole_parent">
+    <div class="container">
+        <div class="main_container">
+            <div class="container">
+                <nav class="header">
+                    <h1 class="placement_logo">Placement Portal</h1>
+                    <div class="manuopt">
+                        <h3><a href="/">Home</a></h3>
+                        <h3><a href="#">Dashboard</a></h3>
+                        <h3><a href="#">Student Profile</a></h3>
+                        <h3><a href="#">Contact</a></h3>
+                    </div>
+                </nav>
+            </div>
+    </div>
+    <div class="section">
+    <div class="navbar">
+        
+        <div class="welcome manu">
+            <h3>Welcome Admin</h3>
+    </div>
+    <h4 class="manu"><i class="fa-sharp fa-solid fa-gauge" style="color: #4a5b78;"></i>
+        <a href="/jobproviderdash">Dashboard </a></h4>
+    <h4 class="manu"><i class="fa-sharp fa-solid fa-house" style="color: #4a5b78;"></i>
+        <a href="/">Home </a></h4>
+        <h4 class="manu"><i class="fa-sharp fa-solid fa-square-plus" style="color: #4a5b78;"></i>
+            <a href="/postjob"  > Post Job</a></h4>
+            <h4 class="manu"><i class="fa-solid fa-address-card" style="color: #4a5b78;"></i>
+                <a href="#" >Applied Student</a></h4>
+                <h4 class="logout"><i class="fa-sharp fa-solid fa-right-from-bracket" style="color: #4a5b78;"></i>
+                    <a href="#"> Logout</a></h4>
+
+    </div>
+    <form class="data" action="/create" method="POST">
+        <h3 class="statics">Post a new Drive</h3>
+        <table >
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Compony Name</th>
+                    <th>Job Title</th>
+                    <th>Qualification Required</th>
+                    <th>Salary</th>
+                    <th>Edit Job</th>
+                    <th>Delete Job</th>
+                </tr>
+                <tbody>
+                    
+<%  for(var i=0;i<x.length;i++){ %>
+                  <tr>
+                        <td><%= i+1 %></td>
+                        <td><%= x[i].componyname %></td>
+                        <td><%=x[i].role %></td>
+                        <td><%=x[i].Qualification %></td>
+                        <td><%= x[i].ctc %></td>
+                        <td class="edit"><i class="fa-solid fa-pen-to-square"></i></td>
+                        <td class="edit"><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+  <% } %>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    </div>
+    <footer>
+    <p class="footertext">Copyright © 2022 Placement Portal. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+ $(document).ready(function(){
+    $("table").DataTable({
+        order: [0,'desc']
+    });
+ });
+</script>
+</body>
+</html>

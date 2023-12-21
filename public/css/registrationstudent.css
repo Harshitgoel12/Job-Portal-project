@@ -30,7 +30,7 @@
 }
 .manuopt {
     display: flex;
-    gap: 5rem;
+    gap: 7rem;
     background-color: #114F5E;
     font-family: sans-serif;
 }
@@ -98,7 +98,8 @@ background-color: #ECF0F5;
 }
 input{
   padding: .6rem;
-    padding-right: 15rem;
+    padding-right: 18rem;
+    padding-bottom: 1rem;
     font-size: 1.2rem;
     margin-bottom: 1rem;
     list-style: none;
@@ -114,7 +115,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
-    left: 90%;
+    left: 110%;
+    top: 10px;
 }
 input::-webkit-datetime-edit-fields-wrapper {
     position: relative;

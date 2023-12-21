@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whole_parent{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    gap: 33rem;
+    width: 100vw;
+    height: 5rem;
+    padding-top: 1.5rem;
+    background-color: #21353b;
+    padding-bottom: 1.5rem;
+}
+.placement_logo{
+    margin-left: 4rem;
+    color: #4992d3;
+   
+}
+.placement_logo:hover{
+    color: #5289B5;
+}
+.manuopt {
+    display: flex;
+    gap: 7rem;
+    background-color: 1f3035;
+}
+.manuopt h3 a{
+    text-decoration: none;
+    color: #1b78c8;
+}
+.manuopt h3 a:hover{
+    color:#0627fb ;
+}
+.manu h3:hover{
+    color: #4125AA;
+}
+.section{
+    background-color:#DBEAFE;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+}
+
+.portal_heading{
+    color: white;
+    margin-left: 5.4rem;
+    margin-bottom: 1.3rem;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    gap: 3rem;
+    margin-bottom: 1.2rem;
+}
+.navbar{
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    box-shadow: 10px 5px 5px rgb(226, 218, 218);
+    margin-bottom: .5rem;
+    height: 110vh;
+}
+.manu{
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: .2rem;
+}
+
+.welcome{
+    display: flex;
+    color: rgb(167, 34, 167);
+}
+.logout{
+  font-size: 1.3rem;
+  margin-top: 10rem;  
+}
+.statics{
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  margin-right: 2rem;
+}
+th{
+    padding:1rem 2.1rem;
+    font-size: 1.2rem;
+    background-color: rgb(162, 43, 241);
+    color: white;
+}
+td{
+    padding:1rem 2.3rem;
+    align-items: center; 
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+table, th, td {
+    border: 2px solid rgb(112, 110, 110);
+    border-collapse: collapse;
+  }
+.edit{
+font-size: 1.4rem;
+padding-left: 3rem;
+color:rgb(100, 12, 159) ;
+}
+footer{
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footertext{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#pst{
+    color: rgb(9, 110, 194);
+}
+a:hover{
+    color: rgb(13, 152, 140);
+}

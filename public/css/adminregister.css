@@ -73,6 +73,7 @@
     flex-direction: column;
 }
 input{
+    flex: 1;
     padding: .6rem;
       padding-right: 13rem;
       font-size: 1.2rem;
@@ -80,6 +81,7 @@ input{
       list-style: none;
   }
   textarea{
+    flex: 1;
     padding: .6rem;
     padding-right: 8rem;
     font-size: 1.2rem;

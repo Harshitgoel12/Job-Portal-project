@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whole_code{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    gap: 33rem;
+    width: 100vw;
+    height: 5rem;
+    padding-top: 1.5rem;
+    background-color: #21353b;
+    padding-bottom: 1.5rem;
+}
+.placement_logo{
+    margin-left: 4rem;
+    color: #4992d3;
+   
+}
+.placement_logo:hover{
+    color: #5289B5;
+}
+.manuopt {
+    display: flex;
+    gap: 7rem;
+    background-color: 1f3035;
+}
+.manuopt h3 a{
+    text-decoration: none;
+    color: #1b78c8;
+}
+.manuopt h3 a:hover{
+    color:#0627fb ;
+}
+.manu h3:hover{
+    color: #4125AA;
+}
+.section{
+    background-color:#DBEAFE;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+}
+
+.portal_heading{
+    color: white;
+    margin-left: 5.4rem;
+    margin-bottom: 1.3rem;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    gap: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+.navbar{
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    box-shadow: 10px 5px 5px rgb(226, 218, 218);
+    margin-bottom: .5rem;
+}
+.manu{
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: .2rem;
+}
+
+.welcome{
+    display: flex;
+    color: rgb(167, 34, 167);
+}
+.logout{
+  font-size: 1.3rem;
+  margin-top: 8rem;  
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+.statics{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.postedjob,.postjob,.appliedstudent,.shortlestedstudent{
+    height: 11rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(235, 228, 228);
+}
+button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    background-color: rgb(242, 75, 15);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: .6rem;
+}
+ .postjob i ,.shortlestedstudent i, .appliedstudent i, .postedjob i{
+    font-size: 2.3rem;
+    margin-bottom: .6rem;
+ }
+
+ .footer{
+    background-color: white;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: .7rem;
+     font-weight: 800;
+     font-size: 17px;
+     
+ }
+
+
+ .dash{
+    color: rgb(9, 110, 194);
+}
+#d{
+    color: rgb(9, 110, 194);  
+}
+a:hover{
+    color: rgb(13, 152, 140);
+}
+

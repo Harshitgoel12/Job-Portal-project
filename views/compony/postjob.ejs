@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/postjob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  >
+    <title>Dashboard</title>
+    <title>Post Drive</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_container">
+            <div class="container">
+                <nav class="header">
+                    <h1 class="placement_logo">Placement Portal</h1>
+                    <div class="manuopt">
+                        <h3><a href="/">Home</a></h3>
+                        <h3><a href="/jobproviderdash">Dashboard</a></h3>
+                        <h3><a href="/currentdrive">Current Drives</a></h3>
+                        <h3><a href="#">Contact</a></h3>
+                    </div>
+                </nav>
+            </div>
+    </div>
+    <div class="section">
+    <div class="navbar">
+        
+        <div class="welcome manu">
+            <h3>Welcome Admin</h3>
+    </div>
+    <h4 class="manu"><i class="fa-sharp fa-solid fa-gauge" style="color: #4a5b78;"></i>
+        <a href="/jobproviderdash">Dashboard </a></h4>
+    <h4 class="manu"><i class="fa-sharp fa-solid fa-house" style="color: #4a5b78;"></i>
+        <a href="/">Home </a></h4>
+        <h4 class="manu"><i class="fa-sharp fa-solid fa-square-plus" id="pst"></i>
+            <a href="/postjob"  id="pst"> Post Job</a></h4>
+            <h4 class="manu"><i class="fa-solid fa-address-card" style="color: #4a5b78;"></i>
+                <a href="#">Applied Student</a></h4>
+                <h4 class="logout"><i class="fa-sharp fa-solid fa-right-from-bracket" style="color: #4a5b78;"></i>
+                    <a href="#"> Logout</a></h4>
+
+    </div>
+    <form class="data" action="/create" method="POST">
+        <h3 class="statics">Post a new Drive</h3>
+        
+        <input type="text" name="componyname" placeholder="Compony Name">
+        <textarea name="jobdescription"  cols="40" rows="10" placeholder="Job Description"></textarea>
+    <input type="number" name="ctc" placeholder="Salary">
+    <input type="number" name="eligibilitycriteria" placeholder="Eligibility Criteria">
+    <input type="text" name="role" placeholder="Role">
+    <input type="text" name="Qualification" placeholder="Qualification Required">
+    <button>Create</button>
+    </div>
+    </div>
+    <footer>
+    <p class="footertext">Copyright © 2022 Placement Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

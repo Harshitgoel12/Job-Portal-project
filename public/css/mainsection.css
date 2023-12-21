@@ -8,7 +8,7 @@
 
 .maincontent{
   width: 100vw;
-  height: 33rem;
+  height: 34rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,17 +36,15 @@
   font-family: "Poppins", sans-serif;
 
 }
-/* #button{
-  margin-top: 20px;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-} */
+.get_started_button{
+  margin-top: 1rem;
+}
 .hero_section_text{
   background-color: rgb(243, 238, 238);
   padding: 1rem;
   display: flex;
- width: 90%;
- margin-left: calc((100% - 90%)/2);
+ width: 85%;
+ margin-left: calc((100% - 87%)/2);
  margin-right: calc((100%-90%)/2);
   justify-content: center;
   border-radius: .6rem;
@@ -54,7 +52,7 @@
 .text1{
   font-weight: 600;
   font-size: 2.2rem;
-     margin-left: 2.7rem;
+     margin-left: 2.3rem;
   font-family: "Poppins", sans-serif;
   margin-top: 3rem;
   margin-bottom: 10px;
@@ -97,7 +95,7 @@ color: rgb(128, 124, 124);
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
-  margin-left: 6rem;
+  margin-left: 7rem;
  
 }
 .clients .swiper-slide img:hover {
@@ -141,24 +139,28 @@ ul,li{
 
 .footer{
   background-color: rgb(20, 20, 55);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  height: 4rem;
+  width: 100vw;
   color: white;
   display: flex;
-  
+align-items: center;
 }
 .copyright{
   margin-left: 5rem;
 }
 .icons{
   margin-left: 58rem;
+  height: 100%;
+  margin-top: 2rem;
 }
 .icons_gap{
-  margin: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 10px;
-  background-color: rgb(89, 89, 93);
+margin-left: 10px;
+font-size: 1.3rem;
+padding-top: .2rem;
+padding-left: .8rem;
+padding-right: .8rem;
+padding-bottom: .1rem;
+  background-color: rgb(35, 35, 55);
 }
 @media (max-width:900) {
   .hero_section_text{
